@@ -34,7 +34,7 @@ body {
 
 .wrapper {
   /* The image used */
-  
+
 }
 
 .wide img {
@@ -50,6 +50,7 @@ body {
   transition: margin-top .5s;
   margin-bottom: 200px;
   background-image: url("stolenimage.jpg");
+  filter: opacity(.8);
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;

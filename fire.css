@@ -58,11 +58,16 @@ body {
   transition: margin-top .5s;
   margin-bottom: 200px;
   background-image: url("midewin/stolenimage-01.jpg");
+  filter: opacity(.8);
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
   overflow-x: hidden;
+}
+
+#wrapper2 .post {
+  filter: opacity(1.0);
 }
 
 #title {
