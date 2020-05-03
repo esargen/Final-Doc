@@ -1,0 +1,491 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'neue-haas-grotesk-display', sans-serif;
+
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: auto;
+  color: navy;
+  font-size: 12pt;
+  font-weight: 300;
+  font-style: italic;
+  text-decoration: none;
+  background-color: rgb(173, 216, 230, 0.3);
+  margin-bottom: 15px;
+  margin-left: 20px;
+  padding: 5px;
+}
+
+#footer a {
+  text-decoration: none;
+}
+
+.wrapper {
+  /* The image used */
+  
+}
+
+.wide img {
+  width: 105%;
+  overflow: hidden;
+  position: relative;
+  bottom: 400px;
+  z-index: 1;
+
+}
+
+#wrapper2 {
+  transition: margin-top .5s;
+  margin-bottom: 200px;
+  background-image: url("stolenimage.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+#boards img {
+  width: 80%;
+  margin-left: 10%;
+  padding: 20px 0px;
+}
+
+#title {
+  font-size: 60pt;
+  color: white;
+  font-weight: 700;
+  transition: 2s ease;
+  z-index: 1;
+  float: right;
+}
+
+#alpha {
+  mask-mode: alpha;
+}
+
+#landing {
+  background-color: rgb(173, 216, 230);
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  transition: 2s ease;
+  width: 100%;
+}
+
+
+
+.wide {
+  display: block;
+  margin-right: 30px;
+}
+
+.buffer {
+  height: 20px;
+  display: block;
+}
+
+#subtitle {
+  font-size: 16pt;
+  color: navy;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-right: 25px;
+  transition: 2s ease;
+  float: right;
+}
+
+.indent {
+  margin-left: 50px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#todo {
+  background-color: #454e71;
+  color: white;
+  display: block;
+  margin-top: 200px;
+}
+
+#todo .closebtn {
+  position: absolute;
+  top: 630px;
+  right: 45px;
+  transition: .75s ease;
+  color: white;
+  font-size: 30pt;
+  opacity: 0;
+  text-decoration: none;
+}
+
+#itinerary {
+  margin-left: 100px;
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  height: 30px;
+  overflow-y: hidden;
+  transition: 1s ease;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 20pt;
+  text-transform: lowercase;
+  opacity: .8;
+  transition: .3s;
+  cursor: pointer;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 20pt;
+  text-transform: lowercase;
+  opacity: .8;
+  transition: .3s;
+  cursor: pointer;
+  margin-left: 100px;
+}
+
+#sidenav {
+  width: 0%;
+  max-width: 100%;
+  opacity: 0.0;
+  background-color: rgb(250, 250, 250, 0.6);
+  padding: 15px;
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+  top: 100px;
+  transition: 2s ease;
+  z-index: 1;
+  height: 100px;
+}
+
+#sidenav ul {
+  position: absolute;
+  top: 75px;
+  display: block;
+}
+
+}
+#sidenav li {
+  font-size: 10pt;
+}
+
+#closenav {
+  position: absolute;
+  opacity: 0.0;
+  top: 20px;
+  left: 225px;
+  cursor: pointer;
+}
+
+.collapsible {
+  cursor: pointer;
+}
+
+h2:hover {
+  font-size: 22pt;
+  transition: .5s;
+  opacity: 1;
+}
+
+ol {
+  list-style-type: upper-roman;
+
+}
+
+ol li::before {
+  background-color: white;
+  color: navy;
+  border-radius: 30px;
+  padding: 5px;
+  margin-right: 10px;
+  content: counter(inst);
+  font-weight: 300;
+  width: 30;
+  opacity: 0.3;
+}
+
+ol li {
+  font-weight: 100;
+  counter-increment: inst;
+  display: block;
+  line-height: 30pt;
+  color: white;
+}
+
+.wrapper ul {
+  background-color: rgb(250, 250, 250, 0);
+  width: 100%;
+  position: relative;
+  bottom: 20px;
+  transition: .2s ease;
+  z-index: 2;
+}
+
+.wrapper ul:hover {
+  background-color: rgb(250, 250, 250, 0.5);
+  transition: .6s ease;
+}
+
+
+.wrapper ul li, .collapsible {
+  background-color: rgb(250, 250, 250, 0.6);
+  text-transform: lowercase;
+  color: navy;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5%;
+  font-weight: 300;
+  margin: 5px;
+  transition: .2s ease;
+  outline: none;
+  border: none;
+}
+
+.collapsible {
+  position: relative;
+  top: 255px;
+  left: 107px;
+  opacity: 1.0;
+}
+
+.wrapper ul li:hover {
+  background-color: rgb(250, 250, 250);
+  transform: scale(1.1);
+  transition: .5s ease;
+}
+
+.wrapper ul a {
+  text-decoration: none;
+  text-transform: lowercase;
+  font-weight: 400;
+  color: navy;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 36pt;
+  color: rgb(173, 216, 230);
+  text-transform: lowercase;
+}
+
+a, p, li {
+  font-weight: 100;
+  text-transform: none;
+  font-style: normal;
+  color: black;
+}
+
+.post {
+  margin-top: 100px;
+  background-color: white;
+  width: 100%;
+  padding-bottom: 50px;
+  border-top: 3pt solid navy;
+  border-bottom: 3pt solid navy;
+  box-shadow: 0px 3px 5px rgb(0, 0, 0, .3);
+  transition: max-height 1s ease-out;
+  overflow: hidden;
+}
+
+.row {
+  display: table;
+  content: '';
+  clear: both;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+
+
+.text {
+  padding: 15px;
+  width: 75%;
+  text-align: justify;
+}
+
+.texte {
+  margin-left: 100px;
+  width: 100%;
+}
+
+.image {
+  overflow: hidden;
+  max-width: inherit;
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: scale-down;
+  margin-top: 25px;
+}
+
+.sketch {
+  overflow: hidden;
+  max-width: inherit;
+  width: 350px;
+  object-fit: scale-down;
+  margin-top: 25px;
+}
+
+.imagee {
+  object-fit: contain;
+  width: 200%;
+  float: right;
+  margin-top: 100px;
+}
+
+.largeimagee {
+  width: 100%;
+  float: right;
+  object-fit: contain;
+}
+
+.bigimage {
+  overflow: hidden;
+  max-width: inherit;
+  max-width: 60%;
+  object-fit: scale-down;
+  margin-top: 25px;
+  margin-right: 100px;
+  float: right;
+}
+
+.imageheight {
+  float: left;
+  max-width: 100%;
+}
+
+.smallimagee {
+  width: 75%;
+  object-fit: contain;
+  float: right;
+}
+
+.quote {
+  font-size: 18pt;
+  color: grey;
+  font-weight: 300;
+  text-align: left;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+.map {
+  position: relative;
+  left: 75px;
+}
+
+.post span {
+  max-width: 200px;
+  font-weight: 100;
+  position: relative;
+  left: 50px;
+}
+
+#overlay {
+  background-color: rgb(173, 216, 230);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  position: absolute;
+  animation: "blueTrans" 2s ease;
+}
+
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column2 {
+  flex: 40%;
+  max-width: 40%;
+  padding: 0 4px;
+}
+
+.column2 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+.column3 {
+  margin-left: 50px;
+  margin-right: 50px;
+  flex: 85%;
+  max-width: 85%;
+}
+
+.column3 img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.caption {
+  font-size: 10pt;
+  font-weight: 100;
+  color: navy;
+}
+
+@keyframes blueTrans {
+  0% {
+    opacity: 1.0;
+  }
+  100% {
+    opacity: 0.0;
+  }
+
+
+}
+
+@media (max-width:600px) {
+  p {
+    font-size: 16pt;
+  }
+  h1 {
+    font-size: 24pt;
+  }
+  .row, .row2 {
+    display: block;
+  }
+  .column {
+    width: 100%;
+  }
+  .collapsible {
+    top: 230px;
+  }
+  }
+
+}
